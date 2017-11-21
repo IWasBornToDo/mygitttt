@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <Script language="javascript">
+        var some=document.getElementById('one');
+
+        function first()
+        {
+            some.style.display="none";
+
+        }
+        function second()
+        {
+            some.style.display="inline-block";
+        }
+        document.getElementById('i').onmouseout=function(){first();};
+        document.getElementById('i').onmouseover=function(){second();};
+
+    </Script>
+    <style type="text/css">
+        .container{
+	background-color: RGB(200,200,200);
+	font-weight: bold;
+	width: 20em;
+	height: 50em;
+	position: absolute;
+	border: solid red;
+	left: 6px;
+	top: 5px;
+        }
+        .content {
+            float:left;
+
+            display:flex;
+            position:relative;
+            margin:3em auto;
+            width:80%;
+            flex-direction:row;
+            box-shadow:
+                    1px 1px 0 rgb(22, 160, 133),
+                    2px 2px 0 rgb(22, 160, 133),
+                    3px 3px 0 rgb(22, 160, 133),
+                    4px 4px 0 rgb(22, 160, 133),
+                    5px 5px 0 rgb(22, 160, 133),
+                    6px 6px 0 rgb(22, 160, 133),
+                    7px 7px 0 rgb(22, 160, 133)
+        ;
+        }
+
+        .content>input[type=text],
+        .content>button {
+            display:block;
+            font:1.2em 'Montserrat Alternates';
+        }
+
+        .content>input[type=text] {
+            flex:1;
+            padding:0.6em;
+            border:0.2em solid rgb(26, 188, 156);
+        }
+
+        .content>button {
+            padding:0.6em 0.8em;
+            background-color:rgb(26, 188, 156);
+            color:white;
+            border:none;
+        }
+        .banner{
+            color:rgb(26, 188, 156);
+            position:relative;
+            left:67px;
+        }
+        .school{
+            color:rgb(26, 188, 156);
+            letter-spacing:8px;
+            line-height:1.2;
+            font-size:24px;
+            position:absolute;
+            top:9em;
+            left:30px;
+        }
+        .text{
+
+            width:47em;
+            height:50em;
+            position:absolute;
+            right:12px;
+            top:10px;
+
+
+        }
+        .text1{
+            white-space:normal;
+
+        }
+        body{
+            width:50em;
+            height:50em;
+            background-color:RGB(224,224,224);
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="banner"><span style="font-size:2em">机构搜索</span></div>
+    <div class="content">
+        <input type="text" id="searchterm" placeholder="what are you searching for?" />
+        <button type="button" id="search">Find!</button>
+
+    </div>
+
+
+    <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+    <table>
+        <tbody class="school">
+        <tr style="line-height:0.8;">
+            <td>重庆邮电大学<br><span style="font-size:13px;letter-spacing:1px;">Chongqing University Of posts and Telecommunication</span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr style="line-height:0.8;">
+            <td>重庆大学<br><span style="font-size:13px;letter-spacing:1px;">Chongqing University</span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="line-height:0.8">重庆工商大学<br><span style="font-size:13px;letter-spacing:1px;">Chongqing University Of posts and Telecommunication</span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="line-height:0.8">重庆理工大学<br><span style="font-size:13px;letter-spacing:1px;">Chongqing University Of posts and Telecommunication</span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="line-height:0.8">西南大学<br><span style="font-size:13px;letter-spacing:1px;">Chongqing University Of posts and Telecommunication</span></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<div class="text">
+
+    <table>
+        <tr>总体情况</tr>
+        <tr class="text1">a</tr>
+
+  </table>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
